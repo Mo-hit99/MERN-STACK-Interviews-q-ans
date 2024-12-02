@@ -1,3 +1,11 @@
+<!----------------------------------------------------------------- Introduction mySelf ------------------------------------------------------------->
+good morning,thank u for give me this opportunity to introduce myself.
+
+My name is Mohit, and I recently graduated in August with a Master’s in Computer Applications (MCA) from Chitkara University. During my studies, I focused extensively on full-stack web development, particularly using the MERN stack—MongoDB, Express.js, React.js, and Node.js."
+"I have a strong foundation in building dynamic and responsive web applications. I’ve developed projects like [mention a significant MERN project, e.g., 'an e-commerce website' or 'a real-time chat application'], which involved designing RESTful APIs, managing databases with MongoDB, and creating user-friendly interfaces with React
+
+<!-------------------------------------------------------------- Authentication/Authorization -------------------------------------------------------->
+
 Key Differences:
 
 Aspect	                      Authentication	                                                                 Authorization
@@ -41,7 +49,13 @@ App Requests Permission: The app asks the user to give it access to their data.
 Token is Given: The app gets an access token if the user agrees.
 Access Data: The app uses the token to get data from the service.
 
-                                <!---------------------------------- React JS 25 Q/ANS ------------------------------------->
+<!---------------------------------------------------------------- React JS 25 Q/ANS ----------------------------------------------------------------------->
+
+0. What is Library?
+Answer:
+A library is a collection of pre-built code that can be reused to perform specific tasks or functions, such as manipulating images, 
+parsing data, or generating user interfaces. Libraries are usually focused on solving a particular problem or set of problems, and 
+they can be used in various projects to simplify development.
 
 1. What is React.js?
 Answer: React.js is a JavaScript library developed by Facebook for building user interfaces, especially single-page applications.
@@ -111,6 +125,7 @@ Example:
 jsx
 Copy code
 const [count, setCount] = useState(0);
+
 12. What is useEffect in React?
 
 Answer: useEffect is a hook for performing side effects in functional components, like fetching data or updating the DOM.
@@ -227,8 +242,8 @@ Answer: NoSQL databases are non-relational databases that store data in formats 
 Answer:
 MongoDB is a NoSQL, document-oriented database, while MySQL is a relational database.
 MongoDB uses collections and documents; MySQL uses tables and rows.
-5. What is a collection in MongoDB?
 
+5. What is a collection in MongoDB?
 Answer: A collection is a group of MongoDB documents, equivalent to a table in relational databases.
 
 6. What is a document in MongoDB?
@@ -1749,3 +1764,216 @@ const App = () => (
 );
 
 export default App;
+
+<!----------------------------------------------------------- 25 Questions TypeScript ------------------------------------------------------------------->
+General TypeScript Basics
+
+1. What is TypeScript?
+Answer: TypeScript is a statically typed superset of JavaScript developed by Microsoft. It extends JavaScript by adding type safety, interfaces, and object-oriented programming features, and it compiles to plain JavaScript.
+
+2. What are the benefits of using TypeScript?
+Answer:
+Static Typing: Reduces runtime errors by catching issues during development.
+Improved Code Maintainability: Types make the code easier to read and debug.
+IDE Support: Autocompletion, refactoring tools, and better error detection.
+Compatibility: TypeScript can be used with any JavaScript framework or library.
+
+3. What are the main differences between TypeScript and JavaScript?
+Answer:
+TypeScript is statically typed; JavaScript is dynamically typed.
+TypeScript needs to be compiled into JavaScript to run.
+TypeScript supports features like interfaces, generics, and enums not present in JavaScript.
+
+4. What is the file extension for TypeScript files?
+Answer: The file extension for TypeScript files is .ts.
+
+5. How do you compile a TypeScript file?
+Answer: Use the tsc command followed by the filename, e.g., tsc filename.ts.
+
+TypeScript Features
+
+6. What are TypeScript types?
+Answer: TypeScript provides types like string, number, boolean, array, object, any, unknown, void, never, enum, and tuple.
+
+7. What is type inference in TypeScript?
+Answer: TypeScript automatically infers the type of a variable based on its value. For example:
+let name = "John"; // Inferred as string
+
+8. What are interfaces in TypeScript?
+Answer: Interfaces define the structure of an object, specifying its properties and their types.
+interface User {
+  name: string;
+  age: number;
+}
+
+9. What are generics in TypeScript?
+Answer: Generics allow creating reusable components that can work with different data types.
+function identity<T>(value: T): T {
+  return value;
+}
+
+10. What are enums in TypeScript?
+Answer: Enums allow defining a set of named constants.
+enum Color {
+  Red,
+  Green,
+  Blue,
+}
+
+Advanced TypeScript Concepts
+
+11. What is the difference between unknown and any?
+Answer:
+any disables type checking entirely.
+unknown is safer, as it requires type checks before performing operations on it.
+
+12. What are access modifiers in TypeScript?
+Answer: TypeScript provides public, private, and protected access modifiers to control the visibility of class members.
+
+13. What is the difference between type and interface?
+Answer: Both define object shapes, but interface is extendable, while type can define unions and intersections.
+
+14. What is a tuple in TypeScript?
+Answer: A tuple is a fixed-length array with specific types for each element.
+let person: [string, number] = ["Alice", 25];
+
+15. What are modules in TypeScript?
+Answer: Modules allow splitting code into reusable and maintainable parts. Use export and import keywords to share and access them.
+
+TypeScript and JavaScript Interoperability
+
+16. Can you use JavaScript libraries in TypeScript?
+Answer: Yes, TypeScript supports JavaScript libraries by using type declaration files (.d.ts).
+
+17. What are declaration files in TypeScript?
+Answer: Declaration files (.d.ts) provide type definitions for JavaScript libraries to enable type checking.
+
+18. How do you handle dynamic typing in TypeScript?
+Answer: Use the any or unknown types to handle dynamically typed data.
+
+19. What is the purpose of the as keyword in TypeScript?
+Answer: The as keyword is used for type assertions to specify a more specific type for a variable.
+let value: any = "hello";
+let length = (value as string).length;
+
+20. What are namespaces in TypeScript?
+Answer: Namespaces are used to organize code and avoid naming conflicts.
+namespace Utilities {
+  export function log(message: string) {
+    console.log(message);
+  }
+}
+
+Practical Questions
+
+21. How do you define a function in TypeScript with type annotations?
+Answer:
+function add(a: number, b: number): number {
+  return a + b;
+}
+
+22. How do you make a property optional in an interface?
+Answer: Use the ? symbol:
+interface User {
+  name: string;
+  age?: number;
+}
+
+23. How do you define default parameters in TypeScript functions?
+Answer:
+function greet(name: string = "Guest") {
+  console.log(`Hello, ${name}!`);
+}
+
+24. How do you handle nullable types in TypeScript?
+Answer: Use the union type type | null.
+let name: string | null = null;
+
+25. How can you use TypeScript in a React project?
+Answer: Create files with the .tsx extension and use type annotations for props and state.
+
+<!----------------------------------------------------------- 25 Questions HR Interview ------------------------------------------------------------------->
+
+------------------------------------------------------------- General Questions ---------------------------------------------------------------------------
+1. Tell me about yourself ?
+Answer: "I recently graduated with a degree in [Your Degree] from [Your University]. During my studies, I focused on [specific skills or subjects]. I also worked on projects like [project name] that helped me gain experience in [specific tools or skills]. I am a quick learner and excited to contribute to your organization."
+
+2. Why do you want to work with us?
+Answer: "Your company stands out because of its [specific qualities, like innovation, work culture, or market position]. I am particularly excited about the opportunity to contribute to [specific area or project] while learning and growing with your team."
+
+3. What are your strengths?
+Answer: "I am highly adaptable, a quick learner, and have strong problem-solving skills. For example, during [specific instance], I effectively [example of strength in action]."
+
+4. What are your weaknesses?
+Answer: "I sometimes spend too much time perfecting my work. However, I am learning to balance quality and deadlines by prioritizing tasks effectively."
+
+5. Why should we hire you?
+Answer: "I have the skills, knowledge, and eagerness to contribute to [specific area]. My education and project experiences have prepared me to handle challenges effectively."
+
+------------------------------------------------------ Behavioral and Situational Questions ------------------------------------------------------------------
+
+6. Describe a challenging situation you faced and how you handled it.
+Answer: "During [specific time], I was part of a team working on [project name]. We faced a delay due to [reason]. I proposed [solution] and worked extra hours to ensure we met the deadline."
+
+7. How do you handle feedback?
+Answer: "I see feedback as an opportunity to improve. For example, during [specific instance], I received feedback about [issue] and implemented changes that enhanced my performance."
+
+8. Tell me about a time you worked in a team.
+Answer: "During [project], I collaborated with teammates to [specific goal]. I contributed by [specific contribution] and ensured smooth communication, which helped us complete the project successfully."
+
+9. Have you ever failed at something? What did you learn?
+Answer: "During [specific instance], I underestimated [challenge]. However, I learned the importance of [specific lesson] and implemented it in subsequent tasks."
+
+10. How do you prioritize your work?
+Answer: "I use a combination of to-do lists and deadlines to prioritize tasks based on urgency and importance."
+
+--------------------------------------------------------------- Role-Related Questions ----------------------------------------------------------------------
+
+11. What do you know about this role?
+Answer: "This role involves [key responsibilities]. My skills in [specific areas] align perfectly with the requirements, and I am eager to contribute."
+
+12. What skills do you bring to this position?
+Answer: "I bring skills like [list technical and soft skills]. These were honed during my projects and internships, where I worked on [specific tasks]."
+
+13. Can you describe a project you worked on?
+Answer: "I developed [project name], a [brief description]. My role involved [specific tasks], and I used [technologies/tools]. It improved [specific outcome]."
+
+14. How do you keep up with industry trends?
+Answer: "I follow blogs, take online courses, and participate in forums like [platforms]. This helps me stay updated with [specific trends]."
+
+15. What is your preferred work environment?
+Answer: "I thrive in collaborative and growth-focused environments where I can contribute and learn simultaneously."
+
+------------------------------------------------------------- Personal and Career Goals -------------------------------------------------------------------
+
+16. Where do you see yourself in five years?
+Answer: "I see myself as a skilled professional, contributing significantly to [specific field] and taking on leadership responsibilities."
+
+17. What motivates you?
+Answer: "Solving challenging problems and achieving measurable results motivates me. For instance, [specific example]."
+
+18. What does success mean to you?
+Answer: "Success means achieving personal and professional growth while making a meaningful impact through my work."
+
+19. Do you prefer working independently or in a team?
+Answer: "I am comfortable with both. I enjoy teamwork for collaboration and innovation but can also work independently when needed."
+
+20. How do you handle stress?
+Answer: "I focus on organization and time management to reduce stress. When under pressure, I take a step back, prioritize tasks, and tackle challenges calmly."
+
+----------------------------------------------------------- Closing and Miscellaneous Questions -----------------------------------------------------------
+
+21. What do you know about our company?
+Answer: "I know your company is a leader in [specific area], and I admire your commitment to [specific values]. Your recent [mention achievement] particularly impressed me."
+
+22. How do you handle conflicts at work?
+Answer: "I approach conflicts by understanding all perspectives, communicating openly, and working towards a mutually beneficial solution."
+
+24. Are you willing to relocate?
+Answer: "Yes, I am open to relocation as it would give me an opportunity to grow and contribute effectively."
+
+25. Do you have any hobbies?
+Answer: "I enjoy [hobby], which helps me [benefit, like relax or stay creative]. For example, [specific connection to personal development]."
+
+26. Do you have any questions for us?
+Answer: "Yes, I’d like to know more about the team I’ll be working with and the growth opportunities in this role."
